@@ -1,0 +1,80 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="f_component" com-name="id_singleLine" name="company" serialnum="1">
+      <text class="f_cTitle fs_cTitle">单位名称</text>
+      <text class="f_cDescribe fs_cDescribe">\n请填写采购公司名或采购人名字</text>
+      <input name="company" type='text' class="input medium fs_content fs_input" value="" />
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="f_component" com-name="id_singleLine" name="color" serialnum="1">
+      <text class="f_cTitle fs_cTitle">衣服颜色（若订购多件，请标注清楚）</text>
+      <text class="f_cDescribe fs_cDescribe">\n黑、白、红、绿、蓝、橙、粉</text>
+      <input name="o_color" type='text' class="input medium fs_content fs_input" value="" />
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="f_component" com-name="id_singleLine" name="total" serialnum="1">
+      <text class="f_cTitle fs_cTitle">总数量</text>
+      <text class="f_cDescribe fs_cDescribe">\n填写订单总数量</text>
+      <input name="o_total" type='number' class="input medium fs_content fs_input" value="" />
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="f_component" com-name="id_radio" name="size" serialnum="4">
+      <text class="f_cTitle fs_cTitle">选择您要的尺码</text>
+      <text class="f_cValidate fs_cValidate">*</text>
+      <radio-group name="o_size" bindchange="radioChange">
+        <label><radio value="s" />S</label>
+        <label><radio value="m" />M</label>
+        <label><radio value="l" />L</label>
+        <label><radio value="xl" />XL</label>
+        <label><radio value="xxl" />XXL</label>
+        <label><radio value="xxxl" />XXXL</label>
+        <label><radio value="xxxxl" />XXXXL</label>
+        <label>
+          <radio value="other" />其他
+          <input type='text' name="o_size"></input>
+        </label>
+      </radio-group>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="f_component" com-name="id_section" name="com5" serialnum="5">
+      <text class="f_cTitle fs_cTitle" style="text-align:left">你个人的信息</text>
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="f_component" com-name="basic_name" name="name" serialnum="6">
+      <text class="f_cTitle fs_cTitle">姓名</text>
+      <span class="f_cValidate fs_cValidate">*</span>
+      <input type="text" name="o_name" class="input medium fs_content fs_input" value="" />
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="f_component" com-name="basic_mobile" name="tel" serialnum="7">
+      <text class="f_cTitle fs_cTitle">手机</text>
+      <span class="f_cValidate fs_cValidate">*</span>
+      <input type="number" maxlength="11" name="tel" class="input medium fs_content fs_input" value="" />
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="f_component" com-name="id_singleLine" name="remark" serialnum="8">
+      <text class="f_cTitle fs_cTitle">备注</text>
+      <input type="text" name="remark" class="input medium fs_content fs_input" value="" />
+    </view>
+  </view>
+
+  <view class="section">
+    <view class="f_component" com-name="submit" name="com9" serialnum="9">
+      <button type="primary" size="{{primarySize}}" disabled="{{disabled}}" formType="submit" bindtap="primary"> 提交 </button>
+    </view>
+  </view>
+</form>

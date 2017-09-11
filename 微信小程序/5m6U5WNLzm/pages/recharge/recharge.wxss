@@ -1,0 +1,74 @@
+page {
+  height: 100%;
+}
+#recharge {
+  height: 100%;
+}
+#recharge .select-area {
+  margin: 20px 15px 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+#recharge .select-area .area-title {
+  text-align: left;
+  font-size: 15px;
+  color: #59607B;
+}
+#recharge .select-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 15px;
+}
+#recharge .select-item {
+  display: inline-flex;
+  flex: 0 1 auto;
+  width: calc(50% - 5px);
+  height: 50px;
+  margin-bottom: 10px;
+  color: #A7A7A7;
+  border: 1px solid #A7A7A7;
+  border-radius: 2px;
+  box-sizing: border-box;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center
+}
+#recharge .select-item:nth-child(even){
+  margin-left: 10px;
+}
+#recharge .select-item.active {
+  border: 1px solid #55b737;
+  color: #55b737;
+}
+#recharge .select-item .recharge-money {
+  font-size: 14px;
+}
+#recharge .select-item .give-money {
+  margin-top: 3px;
+  font-size: 12px;
+}
+#recharge .instruction-area {
+  margin: 0 15px 30px;
+}
+#recharge .instruction-area .area-title {
+  text-align: left;
+  font-size: 15px;
+  color: #59607B;
+}
+#recharge .instruction-area .area-content {
+  margin: 8px 0;
+  color: #78809F;
+  font-size: 12px;
+  word-wrap: break-word;
+}
+#recharge .recharge-btn {
+  margin: 0 15px; 
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #55b737;
+  background: #55b737;
+  border-radius: 2px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 2px 2px #eee;
+}

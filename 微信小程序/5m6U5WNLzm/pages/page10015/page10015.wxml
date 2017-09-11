@@ -1,0 +1,11 @@
+<view class="app" hidden="{{page_hidden}}">
+<template name="zcMap">
+    <view class="element map" data-event-params="{{data.customFeature.markers_json_str}}" catchtap="tapMapDetail" style="{{data.style}}">
+      <map class="map-module" hidden="{{data.customFeature.type != 'withmap' }}" longitude="{{data.customFeature.lng}}" latitude="{{data.customFeature.lat}}" markers="{{data.customFeature.markers}}" scale="17"></map>
+      <view class="map-link">{{data.content}}</view>
+    </view>
+</template>
+<view class="ele-container">
+    <template is="zcMap" data="{{data:map1}}"></template>
+</view>
+</view>

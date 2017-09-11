@@ -1,0 +1,87 @@
+[ 2017-08-04T22:52:18+08:00 ] 127.0.0.1 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.068998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002721s ]
+
+[ 2017-08-04T22:52:21+08:00 ] 127.0.0.1 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.3858s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0731s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10,20   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0827s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0371s ]
+
+[ 2017-08-04T23:53:32+08:00 ] 127.0.0.1 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001685s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004909s ]
+
+[ 2017-08-04T23:53:37+08:00 ] 127.0.0.1 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `longhai_category` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `longhai_category` WHERE `c_del` = 0 ORDER BY c_id desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0666s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0689s ]
+
+[ 2017-08-04T23:55:00+08:00 ] 127.0.0.1 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+
+[ 2017-08-04T23:55:03+08:00 ] 127.0.0.1 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `longhai_category` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `longhai_category` WHERE `c_del` = 0 ORDER BY c_id desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0008s ]
+
+[ 2017-08-04T23:57:39+08:00 ] 127.0.0.1 /index.php/Home//Index/checkUserInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+
+[ 2017-08-04T23:57:41+08:00 ] 127.0.0.1 /index.php/Home//Index/getIndex
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `longhai_lecturer` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `longhai_lecturer` WHERE `l_del` = 0 ORDER BY l_id desc LIMIT 10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `longhai_category` [ RunTime:0.0062s ]
+SQL: SELECT * FROM `longhai_category` WHERE `c_del` = 0 ORDER BY c_id desc LIMIT 10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `longhai_video` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `longhai_video` WHERE `v_del` = 0 ORDER BY v_id desc LIMIT 10   [ RunTime:0.0011s ]
+

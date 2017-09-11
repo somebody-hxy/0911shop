@@ -1,0 +1,287 @@
+<view class="app" hidden="{{page_hidden}}">
+<template name="zcFormVessel1">
+  <form class="element form-vessel" data-form="{{data.form}}" style="{{data.style}}"
+        bindsubmit="submitForm"
+        data-compid="form_vessel1"
+        data-fieldinfo="{{data.field_info}}">
+    <template name="zcInputEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element input-ele js-form-ele must" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element input-ele js-form-ele" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcInputEle" data="{{data:data.content[0]}}"></template>
+</view>
+<template name="zcInputEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element input-ele js-form-ele must" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element input-ele js-form-ele" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcInputEle" data="{{data:data.content[1]}}"></template>
+</view>
+<template name="zcInputEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element input-ele js-form-ele must" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element input-ele js-form-ele" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcInputEle" data="{{data:data.content[2]}}"></template>
+</view>
+<template name="zcInputEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element input-ele js-form-ele must" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element input-ele js-form-ele" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcInputEle" data="{{data:data.content[3]}}"></template>
+</view>
+<template name="zcInputEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element input-ele js-form-ele must" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element input-ele js-form-ele" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcInputEle" data="{{data:data.content[4]}}"></template>
+</view>
+<template name="zcInputEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element input-ele js-form-ele must" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element input-ele js-form-ele" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcInputEle" data="{{data:data.content[5]}}"></template>
+</view>
+<template name="zcSelectEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element select-ele js-form-ele must" style="{{data.style}}">
+      <view class="select-container">
+        <label class="title-container" style='{{data.titleStyle}}'><text class="title">{{data.content.title}}</text></label>
+        <checkbox-group class="checkbox-group" wx:if="{{data.customFeature.selectAmount > 1}}" bindchange="bindSelectChange"
+                        data-segment="{{data.customFeature.segment}}"
+                        data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}">
+          <view class="select-item" wx:for="{{data.content.lists}}" wx:key="">
+            <label class="select-content checkbox"><label class="select-text">{{item}}</label>
+              <checkbox class="select-input" value="{{item}}"/>
+            </label>
+          </view>
+        </checkbox-group>
+        <radio-group class="radio-group" bindchange="bindSelectChange" wx:else
+                     data-segment="{{data.customFeature.segment}}"
+                     data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}">
+          <view class="select-item" wx:for="{{data.content.lists}}" wx:key="">
+            <label class="select-content checkbox"><label class="select-text">{{item}}</label>
+              <radio class="select-input" value="{{item}}"/>
+            </label>
+          </view>
+        </radio-group>
+      </view>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element select-ele js-form-ele" style="{{data.style}}">
+      <view class="select-container">
+        <label class="title-container" style='{{data.titleStyle}}'><text class="title">{{data.content.title}}</text></label>
+        <checkbox-group class="checkbox-group" wx:if="{{data.customFeature.selectAmount > 1}}" bindchange="bindSelectChange"
+                        data-segment="{{data.customFeature.segment}}"
+                        data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}">
+          <view class="select-item" wx:for="{{data.content.lists}}" wx:key="">
+            <label class="select-content checkbox"><label class="select-text">{{item}}</label>
+              <checkbox class="select-input" value="{{item}}"/>
+            </label>
+          </view>
+        </checkbox-group>
+        <radio-group class="radio-group" bindchange="bindSelectChange" wx:else
+                     data-segment="{{data.customFeature.segment}}"
+                     data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}">
+          <view class="select-item" wx:for="{{data.content.lists}}" wx:key="">
+            <label class="select-content checkbox"><label class="select-text">{{item}}</label>
+              <radio class="select-input" value="{{item}}"/>
+            </label>
+          </view>
+        </radio-group>
+      </view>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcSelectEle" data="{{data:data.content[6]}}"></template>
+</view>
+<template name="zcInputEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element input-ele js-form-ele must" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element input-ele js-form-ele" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcInputEle" data="{{data:data.content[7]}}"></template>
+</view>
+<template name="zcInputEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element input-ele js-form-ele must" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element input-ele js-form-ele" style="{{data.style}}">
+      <input type="text" placeholder="{{!!data.customFeature.placeholder? data.customFeature.placeholder: ''}}"
+             data-segment="{{data.customFeature.segment}}"
+             data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}"
+             bindchange="inputChange"/>
+    </view>
+  </block>
+</template>
+<view class="ele-container">
+  <template is="zcInputEle" data="{{data:data.content[8]}}"></template>
+</view>
+<template name="zcTimeEle">
+  <block wx:if="{{data.segment_required}}">
+    <view class="element xcx-time-ele must" style="{{data.style}}">
+      <picker mode="date" bindchange="bindDateChange"
+              data-segment="{{data.customFeature.segment}}"
+              data-formcompid="{{data.formCompid}}"
+              data-compid="{{data.compId}}"
+              data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}" style="{{data.customFeature.ifAllDay?'width:100%':''}}">
+        <label class="date-btn">{{data.date? data.date: "请选择日期"}}</label>
+      </picker>
+      <picker wx:if="{{!data.customFeature.ifAllDay}}" mode="time" bindchange="bindTimeChange"
+              data-segment="{{data.customFeature.segment}}"
+              data-formcompid="{{data.formCompid}}"
+              data-compid="{{data.compId}}"
+              data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}">
+        <label class="time-btn">{{data.time? data.time: "请选择时间"}}</label>
+      </picker>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="element xcx-time-ele" style="{{data.style}}">
+      <picker mode="date" bindchange="bindDateChange"
+              data-segment="{{data.customFeature.segment}}"
+              data-formcompid="{{data.formCompid}}"
+              data-compid="{{data.compId}}"
+              data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}" style="{{data.customFeature.ifAllDay?'width:100%':''}}">
+        <label class="date-btn">{{data.date? data.date: "请选择日期"}}</label>
+      </picker>
+      <picker wx:if="{{!data.customFeature.ifAllDay}}" mode="time" bindchange="bindTimeChange"
+              data-segment="{{data.customFeature.segment}}"
+              data-formcompid="{{data.formCompid}}"
+              data-compid="{{data.compId}}"
+              data-datakey="{{data.formCompid}}.form_data.{{data.customFeature.segment}}">
+        <label class="time-btn">{{data.time? data.time: "请选择时间"}}</label>
+      </picker>
+    </view>
+  </block>
+
+</template>
+<view class="ele-container">
+  <template is="zcTimeEle" data="{{data:data.content[9]}}"></template>
+</view>
+<template name="zcFormButton">
+  <button class="button background-ele" style="{{data.style}}" form-type="submit">
+    {{data.content}}
+  </button>
+</template>
+<view class="ele-container">
+  <template is="zcFormButton" data="{{data:data.content[10]}}"></template>
+</view>
+
+  </form>
+</template>
+<view class="ele-container">
+  <template is="zcFormVessel1" data="{{data:form_vessel1}}"></template>
+</view>
+
+</view>

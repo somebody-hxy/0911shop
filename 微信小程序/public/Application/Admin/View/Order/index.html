@@ -1,0 +1,89 @@
+<include file='Public/header' />
+
+<body >
+	<div class="place">
+    	<span>位置：</span>
+	    <ul class="placeul">
+		    <li>订单管理</li>
+		    <li>订单列表</li>
+	    </ul>
+    </div>
+    
+    <div class="rightinfo">
+	    <table class="tablelist">
+	    	<thead>
+		    	<tr>
+		        <th>编号</th>
+		        <th>订单号</th>
+		        <th>联系人</th>
+		        <th>电话</th>
+		        <th>订购数量</th>
+		        <th>颜色</th>
+		        <th>尺码</th>
+		        <th>时间</th>
+		        <th>状态</th>
+		        <th>操作</th>
+		        </tr>
+	        </thead>
+	        <tbody>
+	        	<foreach name="list" item="v">
+		        <tr>
+			        <td>{$v.o_id}</td>
+			        <td>{$v.o_number}</td>
+			        <td>{$v.o_name}</td>
+			        <td>{$v.o_tel}</td>
+			        <td>{$v.o_total}</td>
+			        <td>{$v.o_color}</td>
+			        <td>{$v.o_size}</td>
+			        <td>{$v.o_create_at|date="Y-m-d",###}</td>
+			        <td>{$v['o_status']?'支付':'未支付'}</td>
+			        
+			        <td>
+			        	<a href="{:U('edit?id='.$v['o_id'].'&curr='.$page['curr'].'')}" class="tablelink1">修改</a>
+			        	<a href="{:U('del?id='.$v['o_id'].'&curr='.$page['curr'].'')}" class="tablelink2">删除</a>  
+			        	 
+			        </td>
+		        </tr> 
+		        </foreach>
+	        </tbody>
+	    </table>
+	    <div class="pagin">
+	    	<div class="message">共<i class="blue">&nbsp;{$count}&nbsp;</i>条记录，当前显示第&nbsp;<i class="blue">{$page.curr}&nbsp;</i>页</div>
+	        <div id="page"></div>
+	    </div>
+    </div>
+</body>
+</html>
+<script>
+$('.tablelist tbody tr:odd').addClass('odd');
+layui.use(['laypage', 'layer'], function(){
+	//分页
+	var laypage = layui.laypage;
+  	laypage({
+        cont:'page', skin:'#1E9FFF',
+        first:false, last:false,
+        pages:{$page.pages}, groups:{$page.groups}, curr:{$page.curr},
+        jump:function(obj, first){
+            if(!first){
+            	location.href = "{:U('index')}?curr="+obj.curr;
+            }
+        }
+   });
+   //终止
+    $(".end").click(function(){
+		var id = $(this).parent().parent().find('td').eq(0).text();
+		var curr = {$page.curr};
+		layer.confirm("是否终止该用户会员资格", function(){
+			location.href = "{:U('end')}".replace(".html", "?id="+id+"&curr="+curr);
+		});
+	});
+	//删除
+    $(".del").click(function(){
+		var id = $(this).parent().parent().find('td').eq(0).text();
+		var curr = {$page.curr};
+		layer.confirm("是否确认删除",function(){
+			location.href = "{:U('del')}".replace(".html", "?id="+id+"&curr="+curr);
+		});
+	});
+});
+</script>

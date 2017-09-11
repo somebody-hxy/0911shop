@@ -1,0 +1,72 @@
+<include file='Public/header' />
+
+<body>
+	<div class="place">
+	    <span>位置：</span>
+	    <ul class="placeul">
+		    <li>视频管理</li>
+		    <li>讲师列表</li>
+		    <li>修改讲师</li>
+	    </ul>
+   </div>
+    <div class="formbody">
+    	<div class="formtitle"><span>修改讲师</span></div>
+	    <form action="{:U('edit')}" method="post" class="layui-form">
+	    	<input type="hidden" name="curr" value="{$curr}">
+	    	<input type="hidden" name="l_id" value="{$list.l_id}">
+	    	<input type="hidden" id="l_pic" name="l_pic" value="{$list.l_pic}" />
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">讲师姓名</label>
+					<div class="layui-input-inline"><input type="text" name="l_name" value="{$list.l_name}" lay-verify="required" class="layui-input"></div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">上传图片</label>
+		            <div class="layui-input-inline"><input type="file" name="upload_pic" class="layui-upload-file"></div>
+				</div>
+			</div>
+		    <div class="layui-form-item">
+		    	<div class="layui-inline">
+		            <label class="layui-form-label"></label>
+		            <div class="layui-input-inline"><img id="pic" src="{$list.l_pic}" style="max-width: 320px;max-height: 200px;" /></div>
+		        </div>
+		    </div>
+		    <div class="layui-form-item">
+				<div class="layui-inline">
+					<label class="layui-form-label">讲师详情</label>
+					<div class="layui-input-inline">
+						<script id="editor" name="l_detail" type="text/plain">{$list.l_detail}</script>
+				    	<script>var ue = UE.getEditor('editor');</script>
+					</div>
+				</div>
+			</div>
+			<div class="layui-form-item">
+	            <div class="layui-input-block">
+	                <button class="layui-btn layui-btn-small layui-btn-normal" lay-submit  lay-filter="sub">确认保存</button>
+	                <button class="layui-btn layui-btn-small layui-btn-primary" onclick="history.go(-1)">返回操作</button>
+	            </div>
+        	</div>
+	    </form>
+    </div>
+</body>
+</html>
+<script>
+layui.use(['form','upload'], function(){
+	//上传图片
+    layui.upload({
+        url: "{:U('Base/upload')}" ,success: function(res){
+            if(res.result_code==100){
+                $("#l_pic").val(res.file);
+                $("#pic").attr("src", res.file);
+            }
+        }
+    });
+    
+    var form = layui.form();
+	form.on('submit(sub)', function(data){
+        
+	});
+});
+</script>

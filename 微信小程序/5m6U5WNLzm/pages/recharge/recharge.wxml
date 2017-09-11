@@ -1,0 +1,18 @@
+<view class="recharge-wrap page" id="recharge">
+  <view class="select-area">
+    <view class="area-title">储值</view>
+    <view class="select-list">
+      <block wx:for="{{ itemList }}" wx:key="">
+        <view class="select-item {{ selectedItem.index == index ? 'active': '' }}" data-index="{{ index }}" catchtap="selectActiveItem" >
+          <view class="recharge-money">{{ item.rechargeMoney }}元</view>
+          <view class="give-money" wx:if="{{ item.giveMoney != 0 }}" >赠送{{ item.giveMoney }}元</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="instruction-area" wx:if="{{ selectedItem.description != '' }}" >
+    <view class="area-title">储值说明</view>
+    <view class="area-content">{{ selectedItem.description }}</view>
+  </view>
+  <view class="recharge-btn" catchtap="gotoRecharge">充值</view>
+</view>

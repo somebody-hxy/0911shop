@@ -1,0 +1,54 @@
+<?php if (!defined('THINK_PATH')) exit();?>﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="/public/Public/admin/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background:#f0f9fd;">
+    <div class="lefttop"><span></span>后台管理</div>
+    <dl class="leftmenu">
+        <dd>
+            <div class="title"><span><img src="/Public/admin/images/leftico01.png" /></span>系统管理</div>
+            <ul class="menuson">
+                <li class="active"><cite></cite><a href="<?php echo U('Admin/index');?>" target="rightFrame">管理员列表</a><i></i></li>
+            </ul>    
+        </dd>
+        <dd>
+            <div class="title"><span><img src="/Public/admin/images/leftico01.png" /></span>商品管理</div>
+            <ul class="menuson">
+                <li><cite></cite><a href="<?php echo U('Category/index');?>" target="rightFrame">商品分类</a><i></i></li>
+                <li><cite></cite><a href="<?php echo U('Goods/index');?>" target="rightFrame">商品列表</a><i></i></li>
+            </ul>    
+        </dd>
+        <dd>
+            <div class="title"><span><img src="/Public/admin/images/leftico01.png" /></span>单位管理</div>
+            <ul class="menuson">
+            	<li><cite></cite><a href="<?php echo U('Company/index');?>" target="rightFrame">单位列表</a><i></i></li>
+            </ul>    
+        </dd>
+        <dd>
+            <div class="title"><span><img src="/Public/admin/images/leftico01.png" /></span>订单管理</div>
+            <ul class="menuson">
+                <li><cite></cite><a href="<?php echo U('Order/index');?>" target="rightFrame">订单列表</a><i></i></li>
+            </ul>    
+        </dd>
+    </dl>
+</body>
+</html>
+<script src="/public/Public/admin/js/jquery.min.js" language="JavaScript" ></script>
+<script type="text/javascript">
+$(function(){	
+    $(".menuson li").click(function(){
+        $(".menuson li.active").removeClass("active")
+        $(this).addClass("active");
+    });
+    $('.title').click(function(){
+        var $ul = $(this).next('ul');
+        $('dd').find('ul').slideUp();
+        if($ul.is(':visible')){
+            $(this).next('ul').slideUp();
+        }else{
+            $(this).next('ul').slideDown();
+        }
+    });
+})	
+</script>

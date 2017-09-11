@@ -1,0 +1,63 @@
+<view>
+  <view wx:if="{{ status == 0 }}" class="normal-area">
+    <view><icon type="success" size="80"/></view>
+    <view class="paySuccess-tip">支付成功</view>
+    <view class="paySuccess-detail">
+      <view>您的取餐号为: <text class="paySuccess-queue-num">{{ queueNum }}</text></view>
+      <block wx:if="{{ wayOfDine == 1 }}">
+        <view style="margin-top:15px;">大约{{ durationTime }}分钟后至取餐处取餐</view>
+      </block>
+      <block wx:if="{{ wayOfDine == 2 }}">
+        <view style="margin-top:15px;">请在预约取餐时间 {{ appointmentTime }} 至取餐处取餐</view>
+      </block>
+    </view>
+  </view>
+  <view wx:if="{{ status == 1 }}" class="has-collect-benefit">
+    <view class="pay-success-item">
+      <icon class="icon" type="success" size="25"/>
+      <view class="text">支付成功</view>
+    </view>
+    <view class="to-store-area">
+      <view class="info-item">
+        <view class="item-name">取餐号码：</view>
+        <view class="item-content queue-num">{{ queueNum }}</view>
+      </view>
+      <view class="info-item">
+        <view class="item-name">取餐时间：</view>
+        <view class="item-content" wx:if="{{ wayOfDine == 1 }}">大约{{ durationTime }}分钟后取餐</view>
+        <view class="item-content" wx:if="{{ wayOfDine == 2 }}">请在预约取餐时间 {{ appointmentTime }} 取餐</view>
+      </view>
+      <view class="info-item">
+        <view class="item-name">就餐方式：</view>
+        <view class="item-content" wx:if="{{ wayOfDine == 1 }}">点餐</view>
+        <view class="item-content" wx:if="{{ wayOfDine == 2 }}">预约</view>
+      </view>
+    </view>
+    <view class="collect-benefit-area">
+      <view class="collect-item">
+        <view class="star-num">集集乐个数: {{ collectBenefitData.star_num }}</view>
+        <view class="star-list">
+          <block wx:for="{{ starData }}" wx:key="">
+            <image class="star-item" wx:if="{{ item == 'light' }}" src="{{ collectBenefitData.light_img }}"></image>
+            <image class="star-item" wx:elif="{{ item== 'dark' }}" src="{{ collectBenefitData.dark_img }}"></image>
+          </block>
+        </view>
+        <view class="star-full" wx:if="{{ collectBenefitData.star_num == collectBenefitData.collect_num }}">
+          <view class="star-full-text">满</view>
+        </view>
+      </view>
+      <view class="tip-item">
+        <view wx:if="{{ collectBenefitData.star_num == collectBenefitData.collect_num }}">
+          获得一张{{ collectBenefitData.coupon_title }}
+        </view>
+        <view wx:elif="{{ collectBenefitData.star_num != collectBenefitData.collect_num }}">
+          消费每满{{ collectBenefitData.value }}元，累计一颗星，集满可获得{{ collectBenefitData.coupon_title }}一张
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn-area">
+    <view class="finish-btn" bindtap="goToHomepage">完成</view>
+    <view class="check-order-btn"  bindtap="goToOrderDetail">查看订单</view>
+  </view>
+</view>

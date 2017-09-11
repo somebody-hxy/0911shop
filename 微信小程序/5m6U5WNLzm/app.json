@@ -1,0 +1,95 @@
+{
+  "pages": [
+    "pages/page10000/page10000",
+    "pages/page10001/page10001",
+    "pages/page10002/page10002",
+    "pages/page10003/page10003",
+    "pages/page10004/page10004",
+    "pages/page10005/page10005",
+    "pages/page10006/page10006",
+    "pages/page10007/page10007",
+    "pages/page10010/page10010",
+    "pages/page10015/page10015",
+    "pages/page10016/page10016",
+    "pages/mapDetail/mapDetail",
+    "pages/bindCellphone/bindCellphone",
+    "pages/advanceSearch/advanceSearch",
+    "pages/extensionPage/extensionPage",
+    "pages/userCenter/userCenter",
+    "pages/myMessage/myMessage",
+    "pages/myIntegral/myIntegral",
+    "pages/couponList/couponList",
+    "pages/couponListPage/couponListPage",
+    "pages/couponDetail/couponDetail",
+    "pages/vipCard/vipCard",
+    "pages/balance/balance",
+    "pages/recharge/recharge",
+    "pages/transferPage/transferPage",
+    "pages/transferOrderDetail/transferOrderDetail",
+    "pages/transferPaySuccess/transferPaySuccess",
+    "pages/goodsComment/goodsComment",
+    "pages/logisticsPage/logisticsPage",
+    "pages/orderDetail/orderDetail",
+    "pages/goodsDetail/goodsDetail",
+    "pages/formSubmit/formSubmit",
+    "pages/makeComment/makeComment",
+    "pages/myAddress/myAddress",
+    "pages/addAddress/addAddress",
+    "pages/myOrder/myOrder",
+    "pages/tabbarMyOrder/tabbarMyOrder",
+    "pages/shoppingCart/shoppingCart",
+    "pages/tabbarShoppingCart/tabbarShoppingCart",
+    "pages/makeAppointment/makeAppointment",
+    "pages/toStoreDetail/toStoreDetail",
+    "pages/previewOrderDetail/previewOrderDetail",
+    "pages/paySuccess/paySuccess",
+    "pages/verificationCodePage/verificationCodePage",
+    "pages/tostoreOrderDetail/tostoreOrderDetail",
+    "pages/previewGoodsOrder/previewGoodsOrder",
+    "pages/goodsAdditionalInfo/goodsAdditionalInfo",
+    "pages/goodsOrderDetail/goodsOrderDetail",
+    "pages/goodsOrderPaySuccess/goodsOrderPaySuccess"
+  ],
+  "window": {
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#B2B2B2",
+    "selectedColor": "#B2B2B2",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "iconPath": "images/59b33fb6d3dc5.png",
+        "selectedIconPath": "images/59b33fb6d3e17.png",
+        "text": "首页",
+        "pagePath": "pages/page10000/page10000"
+      },
+      {
+        "iconPath": "images/59b33fb6f3af0.png",
+        "selectedIconPath": "images/59b33fb6f3b49.png",
+        "text": "分类",
+        "pagePath": "pages/page10002/page10002"
+      },
+      {
+        "iconPath": "images/59b33fb71c116.png",
+        "selectedIconPath": "images/59b33fb71c164.png",
+        "text": "团队",
+        "pagePath": "pages/page10010/page10010"
+      },
+      {
+        "iconPath": "images/59b33fb742e27.png",
+        "selectedIconPath": "images/59b33fb742e7a.png",
+        "text": "我的",
+        "pagePath": "pages/page10001/page10001"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}
